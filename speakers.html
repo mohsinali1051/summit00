@@ -1,0 +1,495 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16" />
+    <title>Speakers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- CSS Files
+    ================================================== -->
+    <link
+      href="css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+      id="bootstrap"
+    />
+    <link
+      href="css/bootstrap-grid.min.css"
+      rel="stylesheet"
+      type="text/css"
+      id="bootstrap-grid"
+    />
+    <link
+      href="css/bootstrap-reboot.min.css"
+      rel="stylesheet"
+      type="text/css"
+      id="bootstrap-reboot"
+    />
+    <link href="css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/rev-settings.css" rel="stylesheet" type="text/css" />
+    <link href="css/color.css" rel="stylesheet" type="text/css" />
+
+    <!-- color scheme -->
+    <link
+      rel="stylesheet"
+      href="css/colors/magenta.css"
+      type="text/css"
+      id="colors"
+    />
+
+    <!-- RS5.0 Stylesheet -->
+    <link rel="stylesheet" href="revolution/css/settings.css" type="text/css" />
+    <link rel="stylesheet" href="revolution/css/layers.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="revolution/css/navigation.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/rev-settings.css" type="text/css" />
+
+    <!-- custom font -->
+    <link rel="stylesheet" href="css/font-style.css" type="text/css" />
+  </head>
+
+  <body id="homepage">
+    <div id="wrapper">
+      <!-- header begin -->
+      <header class="transparent eleCard" style="--elevation: 8; border: none">
+        <div class="info">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="column">
+                  Working Hours Monday - Friday
+                  <span class="id-color"><strong>08:00-16:00</strong></span>
+                </div>
+                <div class="column">
+                  Toll Free
+                  <span class="id-color"><strong>1800.899.900</strong></span>
+                </div>
+                <!-- social icons -->
+                <div class="column social">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-rss"></i></a>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                  <a href="#"><i class="fa fa-envelope-o"></i></a>
+                </div>
+                <!-- social icons close -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- logo begin -->
+              <div id="logo">
+                <a href="index.html">
+                  <img
+                    class="logo"
+                    src="images/TCH_Summit_Logo.png"
+                    width="150"
+                    height="50"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <!-- logo close -->
+
+              <!-- small button begin -->
+              <span id="menu-btn"></span>
+              <!-- small button close -->
+
+              <div class="header-extra">
+                <div class="v-center">
+                  <span id="b-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </div>
+              </div>
+
+              <!-- mainmenu begin -->
+              <ul id="mainmenu" class="ms-2">
+                <li>
+                  <a href="index.html#section-hero">Home<span></span></a>
+                </li>
+                <!-- <li><a href="#section-about">About<span></span></a></li> -->
+                <li>
+                  <a href="index.html#section-speakers"
+                    >Speakers<span></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="index.html#section-schedule"
+                    >Schedule<span></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="index.html#section-ticket">Ticket<span></span></a>
+                </li>
+                <li>
+                  <a href="index.html#section-sponsors"
+                    >Sponsors<span></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="index.html#section-register"
+                    >Register<span></span
+                  ></a>
+                </li>
+              </ul>
+
+              <!-- mainmenu close -->
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header close -->
+
+      <!-- content begin -->
+      <div id="content" class="no-bottom no-top">
+        <!-- Cookies -->
+        <div class="cookie-container">
+          <p>
+            This website uses Cookies, to enhance your browsing experience and
+            provide personalized recommendations.<br />By continuing to use our
+            website, you agree to our
+            <a style="color: var(--primary-color-1)" href="privacy.html"
+              >&nbsp;&nbsp;Privacy Policy</a
+            >
+          </p>
+
+          <button class="cookie-btnA" onclick="acceptCookieConsent()">
+            Accept
+          </button>
+          <button class="cookie-btnD ml-5" onclick="deleteCookieConsent()">
+            Decline
+          </button>
+        </div>
+
+        <!-- section begin -->
+        <section id="section-speakers" class="jarallax text-light">
+          <img src="images/bg/1.jpg" class="jarallax-img" alt="" />
+          <div class="wm wm-border dark wow fadeInDown">speakers</div>
+          <div id="all_speakers" class="container">
+            <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
+              <h1>The Speakers</h1>
+              <div class="separator">
+                <span><i class="fa fa-square"></i></span>
+              </div>
+              <div class="spacer-single"></div>
+            </div>
+
+            <div class="clearfix"></div>
+            <div id="allSpeakerData" class="row marginSpeaker"></div>
+          </div>
+        </section>
+        <!-- section close -->
+
+        <!-- register section begin -->
+        <section
+          id="section-register"
+          data-bgimage="url(images/bg/3.png) fixed center no-repeat"
+        >
+          <div class="wm wm-border dark wow fadeInDown">register</div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
+                <h1>Register Now</h1>
+                <div class="separator">
+                  <span><i class="fa fa-square"></i></span>
+                </div>
+                <div class="spacer-single"></div>
+              </div>
+
+              <div class="col-md-8 offset-md-2 wow fadeInUp">
+                <form name="contactForm" id="contact_form">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div id="name_error" class="error">
+                        Please enter your name.
+                      </div>
+                      <div>
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          class="form-control"
+                          placeholder="Your Name"
+                        />
+                      </div>
+
+                      <div id="phone_error" class="error">
+                        Please enter your phone number.
+                      </div>
+                      <div>
+                        <input
+                          type="text"
+                          name="phone"
+                          id="phone"
+                          class="form-control"
+                          placeholder="Your Phone"
+                        />
+                      </div>
+
+                      <div>
+                        <input
+                          type="text"
+                          name="company"
+                          id="company"
+                          class="form-control"
+                          placeholder="Your Company"
+                        />
+                      </div>
+
+                      <div>
+                        <input
+                          type="text"
+                          name="jobTitle"
+                          id="job"
+                          class="form-control"
+                          placeholder="Job Title"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div id="email_error" class="error">
+                        Please enter your valid E-mail ID.
+                      </div>
+                      <div>
+                        <input
+                          type="text"
+                          name="email"
+                          id="email"
+                          class="form-control"
+                          placeholder="Your Email"
+                        />
+                      </div>
+                      <div id="message_error" class="error">
+                        Please enter your message.
+                      </div>
+                      <div>
+                        <textarea
+                          name="message"
+                          id="message"
+                          class="form-control"
+                          placeholder="Additional Message"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-6 row">
+                      <div class="col-4">
+                        <input
+                          type="radio"
+                          id="sponsor"
+                          name="youAre"
+                          value="sponsor"
+                        />
+                        <label class="radioLabel" for="sponsor">Sponsor</label>
+                      </div>
+                      <div class="col-4">
+                        <input
+                          type="radio"
+                          id="investor"
+                          name="youAre"
+                          value="investor"
+                        />
+                        <label class="radioLabel" for="investor"
+                          >Investor</label
+                        >
+                      </div>
+                      <div class="col-4">
+                        <input
+                          type="radio"
+                          id="delegate"
+                          name="youAre"
+                          value="delegate"
+                        />
+                        <label class="radioLabel" for="delegate"
+                          >Delegate</label
+                        >
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 text-center mt-4">
+                      <p id="submit">
+                        <input
+                          type="submit"
+                          value="Register Now"
+                          class="btn btn-custom text-white"
+                        />
+                      </p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- register section close -->
+
+        <!-- footer begin -->
+        <footer class="style-2">
+          <div class="container">
+            <div class="row align-items-middle">
+              <div class="col-md-3">
+                <img
+                  src="images/TCH_Summit_Logo.png"
+                  width="150"
+                  height="50"
+                  class="logo-small"
+                  alt=""
+                /><br />
+              </div>
+
+              <div class="col-md-6">
+                &copy; Copyright 2023 - TheCryptoHub Summit 2023 |
+                <a href="privacy.html">Privacy Policy</a>
+              </div>
+
+              <div class="col-md-3 text-right">
+                <div class="social-icons">
+                  <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                  <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                  <a href="#"><i class="fa fa-rss fa-lg"></i></a>
+                  <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                  <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                  <a href="#"><i class="fa fa-dribbble fa-lg"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" id="back-to-top" class="custom-1"></a>
+        </footer>
+        <!-- footer close -->
+      </div>
+    </div>
+
+    <div id="de-extra-wrap" class="de_light">
+      <span id="b-menu-close">
+        <span></span>
+        <span></span>
+      </span>
+      <div class="de-extra-content">
+        <h3>About us</h3>
+        <p>
+          TheCryptoHub (TCH) Summit is a quartlery flagship event in Dubai,
+          which has positioned itself as the global hub for Cryptos & Web and
+          attracted a global pool of talent to this remarkable city. We are
+          working closely with industry leaders to create the TCH platform to
+          bring together top founders & investors in the Web 3 space and build a
+          valuable ecosystem for our community.
+        </p>
+
+        <div class="spacer10"></div>
+
+        <div class="p-4 border">
+          <div class="text-center">
+            <h1>100 of 300</h1>
+            <p>Seats available</p>
+            <a
+              href="#section-ticket"
+              class="btn-custom btn-fullwidth text-white scroll-to"
+              >Register your Place</a
+            >
+          </div>
+        </div>
+
+        <div class="spacer-single"></div>
+
+        <h3>Where &amp; When?</h3>
+        <div class="h6 padding10 pt0 pb0">
+          <i class="i_h3 fa fa-calendar-check-o id-color"></i>2nd & 3rd March,
+          2023
+        </div>
+        <div class="h6 padding10 pt0 pb0">
+          <i class="i_h3 fa fa-map-marker id-color"></i>UAE, DUBAI
+        </div>
+        <div class="h6 padding10 pt0 pb0">
+          <i class="i_h3 fa fa-phone id-color"></i>(97) 156-364-1161
+        </div>
+        <div class="h6 padding10 pt0 pb0">
+          <i class="i_h3 fa fa-envelope-o id-color"></i>info@sollix.com
+        </div>
+      </div>
+    </div>
+    <div id="de-overlay"></div>
+
+    <script>
+      // function Scrolldown() {
+      //   window.scroll(0, 1000);
+      // }
+
+      // window.onload = Scrolldown;
+
+      function Scrolldown() {
+        window.location.hash = "#all_speakers";
+      }
+
+      window.onload = Scrolldown();
+    </script>
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/cookies.js"></script>
+    <script src="js/registerAPI.js"></script>
+    <script src="js/fetchAllSpeakers.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/countdown-custom.js"></script>
+
+    <!-- RS5.0 Core JS Files -->
+    <script src="revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+    <script src="revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+
+    <!-- RS5.0 Extensions Files -->
+    <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+
+    <script>
+      jQuery(document).ready(function () {
+        // revolution slider
+        jQuery("#slider-revolution").revolution({
+          sliderType: "standard",
+          sliderLayout: "fullwidth",
+          delay: 5000,
+          navigation: {
+            arrows: {
+              enable: false,
+            },
+            bullets: {
+              enable: false,
+              style: "hermes",
+            },
+          },
+          parallax: {
+            type: "mouse",
+            origo: "slidercenter",
+            speed: 2000,
+            levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],
+          },
+          spinner: "off",
+          gridwidth: 1140,
+          gridheight: window.innerWidth > 991 ? 700 : 1000,
+          disableProgressBar: "on",
+        });
+      });
+    </script>
+  </body>
+</html>
